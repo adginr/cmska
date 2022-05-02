@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./app/backend
+      dockerfile: Dockerfile
+    
+    command: "uvicorn main:app --reload --host 0.0.0.0"
+    
+    ports: 
+      - 8000:8000 
+    volumes:
+      - ./app/backend:/etc/app
+
+  frontend:
+    build: 
+      context: ./app/frontend 
+      dockerfile: Dockerfile
+    
+    command: "yarn dev"
+    
+    ports:
+      - 3000:3000
+    
+    volumes:
+      - ./app/frontend:/etc/app
+      - /etc/app/node_modules
+    
