@@ -1,4 +1,4 @@
-# FastAPI Vue3 Docker Starter Template
+# CMSKA based on FastAPI Vue3 Docker
 
 Vite Builder for Vue3
 

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "ohmyfetch": "^0.4.16",
+    "pinia": "^2.0.13",
     "vue": "^3.2.25"
   },
   "devDependencies": {

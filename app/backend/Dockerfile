@@ -11,8 +11,10 @@ RUN poetry export -f 'requirements.txt' -o 'requirements.txt'
 
 FROM python:3.10-slim
 
-WORKDIR /etc/app
+WORKDIR /etc/backend
 
-COPY --from=build-stage /tmp/requirements.txt /etc/app/
+COPY --from=build-stage /tmp/requirements.txt /etc/backend/
 
 RUN pip install -r requirements.txt
+
+RUN pip install alembic
