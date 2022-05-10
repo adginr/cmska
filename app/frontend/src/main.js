@@ -12,4 +12,13 @@ function secretItem() {
   return { verySecure: "This is very serure item" };
 }
 
-createApp(App).use(createPinia().use(secretItem)).mount("#app");
+// Router
+import { createRouter, createWebHistory } from "vue-router";
+import routes from "./routes";
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+createApp(App).use(router).use(createPinia().use(secretItem)).mount("#app");
