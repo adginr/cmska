@@ -3,39 +3,41 @@ version: '3.9'
 services:
   backend:
     build:
-      context: ./app/backend
-      dockerfile: Dockerfile
-    command: bash -c "alembic upgrade head && uvicorn main:app --reload --host 0.0.0.0"
+      context: ./backend
+      dockerfile: backend.dockerfile
+      args:
+        INSTALL_DEV: true
     ports: 
       - 8000:8000
     volumes:
-      - ./app/backend:/etc/backend
+      - ./backend/app:/app
+      - .env:/app/.env 
     depends_on:
       - db
+    env_file:
+      - .env
+    command: bash -c "alembic upgrade head && uvicorn app.main:app --reload --host 0.0.0.0"
 
   frontend:
     build: 
-      context: ./app/frontend 
+      context: ./frontend 
       dockerfile: Dockerfile
-    
     command: "yarn dev"
-    
     ports:
       - 3000:3000
-    
+      - 24678:24678
     volumes:
-      - ./app/frontend:/etc/app
-      - /etc/app/node_modules
+      - ./frontend:/app
+      - /app/node_modules
     
-
   db:
     image: postgres
     restart: always
     env_file:
-      - ./app/backend/.env
+      - .env
     volumes:
       - dummy_db:/var/lib/postgresql/data
-
+    
   adminer:
     image: adminer
     restart: always

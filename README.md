@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # CMSKA based on FastAPI Vue3 Docker
 
 Vite Builder for Vue3
+=======
+# FastAPI NUXT3 - Vue3 Starter Template
+>>>>>>> fb645e9 (Updated with nuxt3)
 
 ### Start
 
