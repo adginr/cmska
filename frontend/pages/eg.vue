@@ -3,7 +3,7 @@ import { ref } from "vue";
 </script>
 
 <template lang="pug">
-nuxt-link(to='/admin') admin
+Example
 </template>
 
 <style lang="scss"></style>

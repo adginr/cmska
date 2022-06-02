@@ -68,5 +68,5 @@ export default defineConfig({
     },
   },
   safelist:
-    "p-1 p-2 p-3 p-4 m-2 m-4 m-8 pl-8 w-full max-w-7xl p-6 w-64 rounded-md text-4xl leading-5 block pl-10 pr-3 py-2  pointer-events-none inset-y-0 opacity-25 focus-wiithin text-gray-400 w-auto easy-out transition duration-100 duration-75 opacity-0 opacity-100 eaasy-out transform rotate-180 w-24 ml-20 w-40px h-40px w-60px h-60px font-bold text-gray-400 hidden mr-4 ml-4 rounded-l rounded-r overflow-hidden inline-block -ml-px relative inline-flex items-center px-4 py-2 rounded-r-md borderrounded-none rounded-full rounded-2xl justify-center",
+    "p-1 p-2 p-3 p-4 m-2 m-4 m-6 text-center max-h-80 m-8 w-60 max-h-sm mt-8 w-10 w-40 h-10 h-18 w-50 top-4 top-10 right-8 text-2xl pl-8 w-full w-70 -bottom-4 duration-500 translate-x-0 -translate-x-full bg-black/30 bg-gray-800 max-w-7xl p-6 w-64 rounded-md text-4xl leading-5 block pl-10 pr-3 py-2  pointer-events-none inset-y-0 opacity-25 focus-wiithin text-gray-400 w-auto easy-out transition duration-100 duration-75 opacity-0 opacity-100 eaasy-out transform rotate-180 w-24 ml-20 w-40px h-40px w-60px h-60px font-bold text-gray-400 hidden mr-4 ml-4 rounded-l rounded-r overflow-hidden inline-block -ml-px relative inline-flex items-center px-4 py-2 rounded-r-md borderrounded-none rounded-full rounded-2xl justify-center",
 });

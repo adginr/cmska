@@ -21,8 +21,8 @@ useWindowEventListener("click", closeDropdown);
 span.dropdown
   base-button(iconRight @click.stop="opened = !opened" ) {{ label }}
     template(#icon-right)
-        mdi:chevron-up(v-if='opened')
-        mdi:chevron-down(v-else)
+      .i-mdi-chevron-up(v-if='opened')
+      .i-mdi-chevron-down(v-if='else')
   .dropdown__items(:class='{"dropdown__items--hidden": !opened}')
     slot(name='default')
 

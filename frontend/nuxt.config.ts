@@ -5,7 +5,7 @@ import extractorPug from "@unocss/extractor-pug";
 import { extractorSplit } from "@unocss/core";
 
 export default defineNuxtConfig({
-  modules: ["@unocss/nuxt", "nuxt-windicss"],
+  modules: ["@unocss/nuxt", "nuxt-windicss", "@vueuse/nuxt"],
   vite: {
     plugins: [
       ViteComponents({
@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     ],
   },
 
+  css: ["@/assets/scss/main.scss"],
   unocss: {
     // presets
     uno: false,

@@ -39,10 +39,10 @@ const props = defineProps({
 
 <template lang="pug">
 button(:type="baseType", :class="['btn', `btn--${size}`, type ? `btn--${type}` : '', !circular ? `rounded-${rounded}` : `rounded-full btn--circular` ]")
-  slot(name='icon-left')
+  slot(name='append')
   span(:class='["inline-flex items-center justify-center", {"ml-4": iconLeft, "mr-4": iconRight, "w-6 h-6": circular }]')
     slot(scope='default')
-  slot(name='icon-right')
+  slot(name='prepend')
 </template>
 
 <style lang="scss">

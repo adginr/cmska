@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from "vue";
+import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/vue";
 </script>
 
 <template lang="pug">
-nuxt-link(to='/admin') admin
 </template>
 
 <style lang="scss"></style>

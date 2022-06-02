@@ -7,15 +7,19 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^0.0.0-insiders.8ca73eb",
     "@iconify/json": "^2.1.40",
+    "add": "^2.0.6",
     "ohmyfetch": "^0.4.16",
     "pinia": "^2.0.13",
     "unplugin-icons": "^0.14.3",
     "unplugin-vue-components": "^0.19.5",
-    "vue": "^3.2.25"
+    "vee-validate": "^4.5.11",
+    "vue": "^3.2.25",
+    "yarn": "^1.22.18",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@headlessui/vue": "^1.6.1",
     "@heroicons/vue": "^1.0.6",
     "@iconify-json/mdi": "^1.1.12",
     "@unocss/core": "^0.33.4",
@@ -23,6 +27,8 @@
     "@unocss/inspector": "^0.33.4",
     "@unocss/nuxt": "^0.33.4",
     "@unocss/preset-icons": "^0.33.4",
+    "@vueuse/core": "^8.6.0",
+    "@vueuse/nuxt": "^8.6.0",
     "nuxt": "3.0.0-rc.1",
     "nuxt-windicss": "^2.3.1",
     "pug": "^3.0.2",
